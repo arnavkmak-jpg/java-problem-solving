@@ -31,3 +31,4 @@ public class calculator {
         scanner.close();
     }
 }
+//daily challenge
