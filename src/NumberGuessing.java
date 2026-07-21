@@ -28,7 +28,6 @@ public class NumberGuessing {
         }while(num!=random_number);
 
         System.out.println("You Win!");
-        System.out.println("Attempts Taken: "+attempt);
 
     }
 }
