@@ -84,13 +84,23 @@ public class SlotMachine {
                 default -> 0;
             };
         }
-        else if(fuit[0].equals(fuit[1])||fuit[1].equals(fuit[2])||fuit[0].equals(fuit[2])){
+        else if(fuit[0].equals(fuit[1])|| fuit[0].equals(fuit[2])){
             return switch (fuit[0]){
                 case "🍒"-> bet*1;
                 case "🍉"-> bet*2;
                 case "🍋"-> bet*3;
                 case "🔔"-> bet*5;
                 case "⭐"-> bet*10;
+                default -> 0;
+            };
+        }
+        else if(fuit[1].equals(fuit[2])) {
+            return switch (fuit[1]) {
+                case "🍒" -> bet * 1;
+                case "🍉" -> bet * 2;
+                case "🍋" -> bet * 3;
+                case "🔔" -> bet * 5;
+                case "⭐" -> bet * 10;
                 default -> 0;
             };
         }
