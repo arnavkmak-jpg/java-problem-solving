@@ -26,6 +26,6 @@ public class Countdown {
 
             }
         };
-        timer.schedule(task,1000,1000);
+        timer.schedule(task,0,1000);
     }
 }
